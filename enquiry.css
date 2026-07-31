@@ -1,0 +1,343 @@
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+html, body {
+
+    margin:0;
+    padding:0;
+
+}
+
+
+body {
+
+    color:#0B1F33;
+
+    background:
+
+    linear-gradient(
+    120deg,
+    #f7fbff,
+    #ffffff
+    );
+
+}
+
+
+
+/* NAVIGATION */
+
+
+nav {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:white;
+
+}
+
+
+.logo img {
+
+    width:150px;
+
+}
+
+
+
+nav ul {
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+
+
+nav ul li a {
+
+    text-decoration:none;
+
+    color:#0B1F33;
+
+    font-size:17px;
+
+    font-weight:500;
+
+}
+
+
+
+nav ul li a:hover {
+
+    color:#4A90C2;
+
+}
+
+
+
+.nav-btn {
+
+    background:#4A90C2;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+/* ENQUIRY SECTION */
+
+
+.enquiry-section {
+
+
+    min-height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 8%;
+
+
+}
+
+
+
+.enquiry-box {
+
+
+    background:white;
+
+    width:520px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.enquiry-box h1 {
+
+
+    font-size:45px;
+
+    line-height:1.2;
+
+    color:#102A43;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+
+}
+
+
+
+.enquiry-box p {
+
+
+    color:#444;
+
+    font-size:18px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+/* FORM */
+
+
+form {
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+
+}
+
+
+
+input,
+select,
+textarea {
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+
+}
+
+
+
+textarea {
+
+
+    height:120px;
+
+    resize:none;
+
+
+}
+
+
+
+button {
+
+
+    background:#4A90C2;
+
+    color:white;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+
+}
+
+
+
+button:hover {
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+nav ul {
+
+    display:none;
+
+}
+
+
+.enquiry-box {
+
+    width:100%;
+
+}
+
+
+}
+.course-selection {
+
+    text-align:left;
+
+}
+
+
+.course-selection label {
+
+    display:block;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.course-option {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#f7fbff;
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+.course-option input {
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#4A90C2;
+
+}
