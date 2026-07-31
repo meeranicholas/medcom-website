@@ -4,13 +4,16 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
-Medcom Educations | Enquiry Form
+Medcom Educations | Enquiry
 </title>
 
+
 <link rel="stylesheet" href="enquiry.css">
+
 
 </head>
 
@@ -18,11 +21,14 @@ Medcom Educations | Enquiry Form
 <body>
 
 
+<!-- NAVIGATION -->
+
 <nav>
 
 <div class="logo">
 
-<img src="images/medcom_website_logo.png">
+<img src="images/medcom_website_logo.png"
+alt="Medcom Educations">
 
 </div>
 
@@ -50,15 +56,38 @@ Enroll Now
 
 
 
+<!-- ENQUIRY SECTION -->
+
+
 <section class="enquiry-section">
+
+
+<div class="enquiry-header">
+
+
+<h1>
+Enroll With Medcom
+</h1>
+
+
+<p>
+Start your journey with practical,
+career-focused training programs.
+</p>
+
+
+</div>
+
+
 
 
 <div class="enquiry-box">
 
 
-<h1>
-Start Your Learning Journey
-</h1>
+
+<h2>
+Course Enquiry
+</h2>
 
 
 <p>
@@ -67,129 +96,80 @@ Fill in your details and our team will contact you shortly.
 
 
 
+
 <form id="enquiry-form">
 
 
-<input type="text" name="from_name" placeholder="Full Name" required>
-
-
-<input type="tel" name="from_phoneno" placeholder="Phone Number" required>
-
-
-<input type="email" name="from_email" placeholder="Email Address">
-
-
-<div class="course-selection">
-
-<label>Select Course(s)</label>
-
-
-<!-- ACCOUNTING -->
-
-<details>
-
-<summary>
-📚 Accounting & Finance
-</summary>
-
-
-<div class="course-options">
-
-
-<label>
 <input 
-type="checkbox" 
-name="course[]" 
-value="Tally Prime with GST"
+type="text"
+name="from_name"
+placeholder="Full Name *"
 required>
 
+
+
+<input
+type="tel"
+name="from_phoneno"
+placeholder="Phone Number *"
+required>
+
+
+
+<input
+type="email"
+name="from_email"
+placeholder="Email Address *"
+required>
+
+
+
+
+<select
+name="course"
+required>
+
+
+<option value="" disabled selected>
+Select Course
+</option>
+
+
+<option value="Tally Prime with GST">
 Tally Prime with GST
-
-</label>
-
+</option>
 
 
-<label>
-<input 
-type="checkbox" 
-name="course[]" 
-value="Manual Accounting">
-
+<option value="Manual Accounting">
 Manual Accounting
-
-</label>
-
-
-</div>
+</option>
 
 
-</details>
-
-
-
-<!-- OFFICE -->
-
-
-<details>
-
-<summary>
-💻 Office & Productivity
-</summary>
-
-
-<div class="course-options">
-
-
-<label>
-
-<input 
-type="checkbox" 
-name="course[]" 
-value="MS Office">
-
+<option value="MS Office">
 MS Office
-
-</label>
-
+</option>
 
 
-
-<label>
-
-<input 
-type="checkbox" 
-name="course[]" 
-value="Microsoft Excel">
-
+<option value="Microsoft Excel">
 Microsoft Excel
-
-</label>
-
+</option>
 
 
-
-<label>
-
-<input 
-type="checkbox" 
-name="course[]" 
-value="PowerPoint">
-
+<option value="PowerPoint">
 PowerPoint
-
-</label>
-
-
-</div>
+</option>
 
 
-</details>
+</select>
 
 
-</div>
 
 
-<textarea placeholder="Your Message" name="from_message"></textarea>
+<textarea
+name="from_message"
+placeholder="Your Message">
+</textarea>
+
 
 
 
@@ -204,11 +184,42 @@ Submit Enquiry
 </div>
 
 
+
+
+<div class="benefits">
+
+
+<div>
+✓ Practical Training
+</div>
+
+
+<div>
+✓ Industry Skills
+</div>
+
+
+<div>
+✓ Career Growth
+</div>
+
+
+</div>
+
+
+
 </section>
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
+
+
 
 </body>
 
 </html>
+
