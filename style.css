@@ -8,6 +8,14 @@
 }
 
 
+html, body {
+
+    margin:0;
+    padding:0;
+
+}
+
+
 
 body {
 
@@ -28,9 +36,10 @@ body {
     background:
 
     linear-gradient(
-        rgba(255,255,255,0.92),
-        rgba(255,255,255,0.85)
-    ),
+    120deg,
+    #f7fbff,
+    #ffffff
+    );
 
     url("images/education-bg.jpg");
 
@@ -51,15 +60,9 @@ nav {
 
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-
-    padding:20px 8%;
-
-
+    padding:15px 8%;
     background:white;
 
 
@@ -70,7 +73,7 @@ nav {
 .logo img {
 
 
-    width:170px;
+    width:150px;
 
 
 }
@@ -151,9 +154,8 @@ nav ul li a:hover {
     align-items:center;
 
     justify-content:space-between;
-
-
-    padding:80px 8%;
+    padding:60px 8%;
+    gap:40px;
 
 
 }
@@ -165,6 +167,7 @@ nav ul li a:hover {
 
 
     max-width:650px;
+    margin-top:-20px;
 
 
 }
@@ -173,15 +176,13 @@ nav ul li a:hover {
 
 .hero-content h1 {
 
+font-size:60px;
 
-    font-size:55px;
+line-height:1.15;
 
-    line-height:1.15;
+color:#102A43;
 
-    color:#0B1F33;
-
-    margin-bottom:20px;
-
+margin-bottom:20px;
 
 }
 
@@ -189,16 +190,13 @@ nav ul li a:hover {
 
 
 .hero-content h2 {
+font-size:26px;
 
+font-weight:500;
 
-    font-size:26px;
+color:#4A90C2;
 
-    font-weight:500;
-
-    color:#4A90C2;
-
-    margin-bottom:25px;
-
+margin-bottom:20px;
 
 }
 
@@ -393,11 +391,26 @@ nav ul li a:hover {
 
     .hero-image {
 
+background:white;
 
-        margin-top:40px;
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+}
 
 
-    }
+.hero-image img {
+
+width:420px;
+
+max-width:100%;
+
+display:block;
+
+}
 
 
 }
