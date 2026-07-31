@@ -289,50 +289,125 @@ nav ul {
 
 
 }
+
+/* COURSE SELECTION */
+
+
 .course-selection {
 
     text-align:left;
 
+    margin-top:10px;
+
 }
 
 
-.course-selection label {
+
+.course-selection > label {
 
     display:block;
 
-    font-size:16px;
+    font-size:17px;
 
     font-weight:600;
 
     margin-bottom:15px;
 
+    color:#102A43;
+
 }
 
 
 
-.course-option {
+details {
+
+    background:#f7fbff;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border:1px solid #e1edf5;
+
+}
+
+
+
+summary {
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#102A43;
+
+    list-style:none;
+
+}
+
+
+
+summary::after {
+
+    content:"+";
+
+    float:right;
+
+    color:#4A90C2;
+
+    font-size:22px;
+
+}
+
+
+
+details[open] summary::after {
+
+    content:"−";
+
+}
+
+
+
+.course-options {
+
+    margin-top:15px;
+
+    padding-left:10px;
+
+}
+
+
+
+.course-options label {
 
     display:flex;
 
     align-items:center;
 
-    gap:12px;
+    gap:10px;
 
-    background:#f7fbff;
+    background:white;
 
-    padding:12px 15px;
-
-    border-radius:10px;
+    padding:12px;
 
     margin-bottom:10px;
 
+    border-radius:10px;
+
     cursor:pointer;
+
+    color:#444;
 
 }
 
 
 
-.course-option input {
+.course-options input {
 
     width:18px;
 
