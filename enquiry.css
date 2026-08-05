@@ -1,26 +1,20 @@
+/* =========================
+   COMMON RESET
+========================= */
 
 * {
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
 
-
 body {
 
-    color: #0B1F33;
-
-    background:
-
-    linear-gradient(
-        120deg,
-        #f7fbff,
-        #ffffff
-    );
+    color:#0B1F33;
 
 }
 
@@ -34,12 +28,10 @@ body {
 nav {
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    padding:15px 8%;
+    padding:15px 6% 15px 8%;
 
     background:white;
 
@@ -49,7 +41,11 @@ nav {
 
 .logo img {
 
-    width:150px;
+    width:95px;
+
+    height:70px;
+
+    object-fit:contain;
 
 }
 
@@ -61,10 +57,13 @@ nav ul {
 
     list-style:none;
 
-    gap:35px;
+    gap:42px;
+
+    margin-left:auto;
+
+    margin-right:35px;
 
 }
-
 
 
 nav ul li a {
@@ -75,15 +74,7 @@ nav ul li a {
 
     font-size:17px;
 
-    font-weight:500;
-
-}
-
-
-
-nav ul li a:hover {
-
-    color:#4A90C2;
+    font-weight:600;
 
 }
 
@@ -91,13 +82,13 @@ nav ul li a:hover {
 
 .nav-btn {
 
-    background:#4A90C2;
+    background:linear-gradient(135deg,#4A90C2,#2f6f9e);
 
     color:white;
 
-    padding:12px 25px;
+    padding:12px 28px;
 
-    border-radius:25px;
+    border-radius:30px;
 
     text-decoration:none;
 
@@ -108,23 +99,15 @@ nav ul li a:hover {
 
 
 /* =========================
-   ENQUIRY SECTION
+   ENQUIRY PAGE
 ========================= */
 
 
 .enquiry-section {
 
+    padding:60px 8%;
 
-    min-height:85vh;
-
-    padding:70px 8%;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
+    background:#eef6fc;
 
 }
 
@@ -132,13 +115,9 @@ nav ul li a:hover {
 
 .enquiry-header {
 
-
     text-align:center;
 
-    max-width:700px;
-
-    margin-bottom:35px;
-
+    margin-bottom:40px;
 
 }
 
@@ -146,13 +125,9 @@ nav ul li a:hover {
 
 .enquiry-header h1 {
 
-
-    font-size:48px;
+    font-size:40px;
 
     color:#102A43;
-
-    margin-bottom:15px;
-
 
 }
 
@@ -160,57 +135,53 @@ nav ul li a:hover {
 
 .enquiry-header p {
 
-
-    font-size:19px;
+    font-size:18px;
 
     color:#555;
 
-    line-height:1.6;
-
+    margin-top:10px;
 
 }
 
 
 
-/* =========================
-   FORM CARD
-========================= */
+.enquiry-container {
+
+    display:grid;
+
+    grid-template-columns:1.2fr 0.8fr;
+
+    gap:40px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
 
 
-.enquiry-box {
 
+.enquiry-box,
+.enquiry-info {
 
     background:white;
 
-    width:520px;
-
-    max-width:100%;
-
     padding:40px;
 
-    border-radius:25px;
+    border-radius:30px;
 
-
-    box-shadow:
-
-    0 15px 40px rgba(0,0,0,0.12);
-
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 
 }
 
 
 
-.enquiry-box h2 {
-
-
-    text-align:center;
-
-    font-size:30px;
+.enquiry-box h2,
+.enquiry-info h2 {
 
     color:#102A43;
 
-    margin-bottom:10px;
-
+    margin-bottom:15px;
 
 }
 
@@ -218,73 +189,29 @@ nav ul li a:hover {
 
 .enquiry-box p {
 
-
-    text-align:center;
-
-    color:#666;
+    color:#555;
 
     margin-bottom:25px;
 
-
 }
 
 
 
-/* =========================
-   FORM
-========================= */
-
-
-form {
-
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-
-
-}
-
-
-
-input,
-select,
-textarea {
-
+form input,
+form select,
+form textarea {
 
     width:100%;
 
     padding:15px;
 
-    border:1px solid #d9e6f0;
+    margin-bottom:18px;
 
-    border-radius:12px;
+    border-radius:15px;
 
-    font-size:16px;
+    border:1px solid #ddd;
 
-    outline:none;
-
-    transition:0.3s;
-
-
-}
-
-
-
-input:focus,
-select:focus,
-textarea:focus {
-
-
-    border-color:#4A90C2;
-
-
-    box-shadow:
-
-    0 0 8px rgba(74,144,194,0.25);
-
+    font-size:15px;
 
 }
 
@@ -292,102 +219,196 @@ textarea:focus {
 
 textarea {
 
-
-    height:120px;
-
-    resize:none;
-
+    min-height:120px;
 
 }
 
 
 
-/* =========================
-   BUTTON
-========================= */
+form button {
 
+    width:100%;
 
-button {
-
+    padding:15px;
 
     background:#4A90C2;
 
     color:white;
 
-    padding:16px;
-
     border:none;
 
     border-radius:30px;
 
-    font-size:16px;
-
     font-weight:bold;
 
-    cursor:pointer;
-
-    transition:0.3s;
-
+    font-size:16px;
 
 }
 
 
 
-button:hover {
+form button:hover {
 
-
-    transform:translateY(-3px);
-
-
-    box-shadow:
-
-    0 8px 20px rgba(74,144,194,0.35);
-
+    background:#2f6f9e;
 
 }
 
 
 
-/* =========================
-   BENEFITS
-========================= */
+.info-item {
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.enquiry-info {
+
+    background:
+    linear-gradient(
+        135deg,
+        #eef6fc,
+        #ffffff
+    );
+
+    padding:40px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
 
 
-.benefits {
+.enquiry-info h2 {
 
+    font-size:28px;
+
+    color:#102A43;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.info-item {
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+    align-items:flex-start;
+
+}
+
+
+
+.info-icon {
+
+    width:50px;
+
+    height:50px;
 
     display:flex;
 
     justify-content:center;
 
-    gap:30px;
+    align-items:center;
 
-    margin-top:35px;
+    background:#4A90C2;
 
-    flex-wrap:wrap;
+    border-radius:50%;
 
+    font-size:25px;
 
 }
 
 
 
-.benefits div {
-
-
-    background:white;
-
-    padding:15px 25px;
-
-    border-radius:25px;
+.info-item h3 {
 
     color:#102A43;
 
-    box-shadow:
+    font-size:17px;
 
-    0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom:6px;
 
-    font-weight:500;
+}
 
+
+
+.info-item p {
+
+    color:#555;
+
+    line-height:1.5;
+
+    font-size:14px;
+
+}
+
+
+
+.contact-card {
+
+    margin-top:35px;
+
+    padding:25px;
+
+    background:#0b0f33;
+
+    border-radius:20px;
+
+}
+
+
+.contact-card h3 {
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+
+.contact-card p {
+
+    color:#d5e3ef !important;
+
+    line-height:1.6;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.info-item span {
+
+    font-size:25px;
+
+}
+
+
+
+.enquiry-info p {
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+
+.contact-title {
+
+    margin-top:35px;
 
 }
 
@@ -408,37 +429,29 @@ button:hover {
     }
 
 
+    .enquiry-container {
 
-    .enquiry-header h1 {
-
-
-        font-size:38px;
-
-
-    }
-
-
-
-    .enquiry-box {
-
-
-        padding:30px;
-
-
-    }
-
-
-
-    .benefits {
-
-
-        flex-direction:column;
-
-        align-items:center;
-
+        grid-template-columns:1fr;
 
     }
 
 
 }
 
+.simple-footer {
+
+    background:#081724;
+
+    color:#d5e3ef;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:14px;
+
+    margin-top:50px;
+
+    border-radius:40px 40px 0 0;
+
+}
