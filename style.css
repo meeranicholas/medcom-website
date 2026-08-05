@@ -785,30 +785,36 @@ display:block;
 
 /* SOCIAL MEDIA ICONS */
 
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+/* =========================
+   FOOTER SOCIAL MEDIA ICONS
+========================= */
+
+
 .social-links {
 
     display:flex;
 
-    flex-wrap:wrap;
+    justify-content:flex-start;
 
-    gap:12px;
+    align-items:center;
 
-    margin-top:25px;
+    gap:15px;
+
+    margin-top:30px;
 
 }
 
 
+
 .social-links a {
 
-    width:38px;
+    width:45px;
 
-    height:38px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
+    height:45px;
 
     border-radius:50%;
 
@@ -816,15 +822,20 @@ display:block;
 
     color:white;
 
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
     text-decoration:none;
 
-    font-size:16px;
-
-    font-weight:bold;
+    font-size:20px;
 
     transition:0.3s ease;
 
 }
+
 
 
 .social-links a:hover {
@@ -836,6 +847,10 @@ display:block;
     transform:translateY(-3px);
 
 }
+
+
+
+
 
 
 /* =========================
