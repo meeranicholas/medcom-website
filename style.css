@@ -31,11 +31,11 @@ body {
 .hero {
 
     min-height:auto;
-
+    padding-bottom:35px;
     background:
     linear-gradient(
     120deg,
-    #f7fbff,
+    #eef6fc,
     #ffffff
     ),
     url("images/sample_V2.png.png");
@@ -438,7 +438,7 @@ display:block;
 .why-section,
 .cta-section {
 
-    padding:60px 8%;
+    padding:40px 8% 25px;
     text-align:center;
 
 }
@@ -452,7 +452,7 @@ display:block;
 
     font-size:36px;
     color:#102A43;
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -486,7 +486,7 @@ display:block;
 .course-card,
 .why-grid div {
 
-    background:#f7fbff;
+    background:#eef6fc;
     padding:30px;
     border-radius:20px;
     transition:0.3s ease;
@@ -517,7 +517,7 @@ display:block;
 
 .cta-section {
 
-    background:#f7fbff;
+    background:#eef6fc;
 
 }
 /* PARTNERS SECTION */
@@ -525,7 +525,7 @@ display:block;
 
 .partners-section {
 
-    padding:60px 8%;
+    padding:25px 8% 50px;
     text-align:center;
     background:#ffffff;
 
@@ -566,12 +566,488 @@ display:block;
 
 .partner-card {
 
-    background:#f7fbff;
+    background:#eef6fc;
     padding:25px;
     border-radius:15px;
     font-size:18px;
     font-weight:bold;
     color:#4A90C2;
     transition:0.3s ease;
+
+}
+
+/* TRUST HIGHLIGHT STRIP */
+
+
+.trust-strip {
+
+    width:84%;
+    margin:35px auto 0;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+
+    padding:30px 5%;
+
+    background:#eef6fc;
+
+    border-radius:40px;
+
+}
+
+
+
+.trust-item {
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:15px;
+
+}
+
+
+
+.trust-item span {
+
+    font-size:35px;
+
+}
+
+
+
+.trust-item h3 {
+
+    margin-bottom:5px;
+    color:#102A43;
+    font-size:18px;
+
+}
+
+
+
+.trust-item p {
+
+    color:#555;
+    font-size:14px;
+    line-height:1.5;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    background:#0b0f33;
+
+    color:white;
+
+    width:100%;
+
+    margin-top:50px;
+
+    border-radius:40px 40px 0 0;
+
+    overflow:hidden;
+
+}
+
+
+/* FOOTER MAIN LAYOUT */
+
+.footer-container {
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(220px, 1fr)
+        minmax(150px, 0.7fr)
+        minmax(500px, 2fr);
+
+    gap:40px;
+
+    padding:50px 8%;
+
+    align-items:start;
+
+}
+
+
+/* FOOTER ABOUT */
+
+.footer-about img {
+
+    width:120px;
+
+    height:auto;
+
+    margin-bottom:15px;
+
+}
+
+
+.footer-about p {
+
+    color:#d5e3ef;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+
+/* FOOTER HEADINGS */
+
+.footer h3 {
+
+    color:#4A90C2;
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+}
+
+
+/* QUICK LINKS */
+
+.footer-links {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+.footer-links a {
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+
+}
+
+
+.footer-links a:hover {
+
+    color:#4A90C2;
+
+    transform:translateX(3px);
+
+}
+
+
+/* ENQUIRY BUTTON */
+
+.footer-btn {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 30px;
+
+    background:#4A90C2;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:0.3s ease;
+
+}
+
+
+.footer-btn:hover {
+
+    background:white;
+
+    color:#0b0f33;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* SOCIAL MEDIA ICONS */
+
+.social-links {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+
+.social-links a {
+
+    width:38px;
+
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#4A90C2;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:0.3s ease;
+
+}
+
+
+.social-links a:hover {
+
+    background:white;
+
+    color:#0b0f33;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =========================
+   CONTACT AND BRANCHES
+========================= */
+
+.footer-contact {
+
+    min-width:0;
+
+}
+
+
+.branches {
+
+    display:grid;
+
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+
+    gap:18px;
+
+    margin-top:20px;
+
+}
+
+
+.branch-card {
+
+    min-width:0;
+
+    background:rgba(255,255,255,0.07);
+
+    padding:20px;
+
+    border-radius:18px;
+
+}
+
+
+.branch-card h4 {
+
+    color:white;
+
+    margin:0 0 12px;
+
+    font-size:16px;
+
+}
+
+
+.branch-card p {
+
+    color:#d5e3ef;
+
+    line-height:1.6;
+
+    font-size:14px;
+
+    margin:0 0 15px;
+
+}
+
+
+.map-link {
+
+    display:inline-block;
+
+    color:#7fc4f0;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    transition:0.3s ease;
+
+}
+
+
+.map-link:hover {
+
+    color:white;
+
+    transform:translateX(3px);
+
+}
+
+
+/* COMMON PHONE AND EMAIL */
+
+.common-contact {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:25px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,0.15);
+
+}
+
+
+.common-contact a {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:0.3s ease;
+
+}
+
+
+.common-contact a:hover {
+
+    color:#4A90C2;
+
+}
+
+
+/* FOOTER COPYRIGHT */
+
+.footer-bottom {
+
+    text-align:center;
+
+    padding:15px;
+
+    background:#081724;
+
+    font-size:14px;
+
+    color:#ccc;
+
+}
+
+
+/* =========================
+   TABLET AND MOBILE
+========================= */
+
+@media(max-width:1000px) {
+
+    .footer-container {
+
+        grid-template-columns:
+            repeat(2, minmax(250px, 1fr));
+
+    }
+
+
+    .footer-contact {
+
+        grid-column:1 / -1;
+
+    }
+
+}
+
+
+@media(max-width:700px) {
+
+    .footer {
+
+        border-radius:30px 30px 0 0;
+
+    }
+
+
+    .footer-container {
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        padding:45px 8%;
+
+    }
+
+
+    .footer-contact {
+
+        grid-column:auto;
+
+    }
+
+
+    .branches {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .common-contact {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+
+    }
 
 }
