@@ -520,3 +520,58 @@ display:block;
     background:#f7fbff;
 
 }
+/* PARTNERS SECTION */
+
+
+.partners-section {
+
+    padding:60px 8%;
+    text-align:center;
+    background:#ffffff;
+
+}
+
+
+.partners-section h2 {
+
+    font-size:36px;
+    color:#102A43;
+    margin-bottom:15px;
+
+}
+
+
+.partners-intro {
+
+    max-width:750px;
+    margin:auto;
+    color:#555;
+    font-size:17px;
+    line-height:1.7;
+
+}
+
+
+
+.partners-grid {
+
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:20px;
+
+}
+
+
+
+.partner-card {
+
+    background:#f7fbff;
+    padding:25px;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:bold;
+    color:#4A90C2;
+    transition:0.3s ease;
+
+}
